@@ -31,6 +31,7 @@ import { HomeComponent } from './components/home/home.component';
         FormsModule,
         RouterModule.forRoot([
           {path: 'characters', component: CharacterListComponent},
+          {path: 'character/:id', component: CharacterDetailComponent},
           {path: 'home', component: HomeComponent},
           {path: '', redirectTo: 'home', pathMatch: 'full'},
         ])
